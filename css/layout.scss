@@ -1,0 +1,64 @@
+/*
+	Main layout CSS
+*/
+
+/* Main panel that resides under .app-container*/
+.main-panel {
+	list-style-type: none;
+	padding-left: 0px;
+	position: relative;
+}
+#user-panel {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 5%;
+	border: 2px solid;
+}
+.main-content-layout {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.main-layout-panel {
+	padding-left: 0px;
+	padding-top: 2px;
+	height: 100%;
+	width: 100%;
+}
+#main-content-panel {
+	display: flex;
+	position: relative;
+	height: 97%;
+	width: 100%;
+	border: 2px solid;
+}
+#nav-panel {
+	display: flex;
+	height: 15%;
+	border: 2px solid;
+	padding: 0px 10px;
+}
+#workspace-panel {
+	padding: 0px 10px;
+	display: inline-block;
+	position: absolute;
+	margin: 2px 0 0 2px;
+	width: 100%;
+	height: 85%; /* Need to re-visit this, if set to 100%, over flows*/
+	border: 2px solid;
+	padding: 0px 10px;
+}
+/*Main nav items*/
+.main-nav-items {
+	position: absolute;
+	right: 0px;
+	padding-right: 100px;
+	padding-top: 24px;
+}
+.main-nav-items li {
+	list-style-type: none;
+	display: inline-block;
+	border: 2px solid;
+	margin-left: 25px;
+}

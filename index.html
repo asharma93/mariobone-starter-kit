@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>MarioBone</title>
+
+  <!-- Application styles -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="dist/css/mariobone.min.css">
+  <!-- /build -->
+</head>
+
+<body>
+  <!-- Application container -->
+    <div id="app-container">
+      <script type="text/javascript" src="bower_components/requirejs/require.js"></script>
+      <script type="text/javascript" src="dist/js/mariobone.min.js"></script>
+      <script>
+            "use strict";
+            require(["jquery", "backbone", "ExampleApp"], function($, Backbone, App) {
+              Backbone.history.start();
+
+                $(function() {
+                    App.start({
+                      div : "#app-container",
+                      route : "",
+                      routePrefix : "example"
+                    });
+                });
+
+                // Copied from platform-js
+                $("#app-container")
+                    .on("click.appRoute", "a[href]:not([data-noprefix])", function(event) {
+                        var fragment = Backbone.history.getFragment($(this).attr("href")).replace("#", "");
+
+                        event.preventDefault();
+
+                        // Use the application subrouter -- this will add the route prefix
+                        App.Router.navigate(fragment, { trigger: true });
+
+                        return false;
+                    });
+            });
+        </script>
+
+    </div>
+
+  <!-- Application source. -->
+  <script src="bower_components/requirejs/require.js" data-main="js/config"></script>
+  <script type="text/javascript" src="dist/js/mariobone.min.js"></script>
+  <!-- /build -->
+</body>
+</html>

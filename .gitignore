@@ -1,0 +1,22 @@
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Node & Bower #
+node_modules
+bower_components
+
+.idea
+
+# This should be built from source #
+dist/*
+*/*.zip

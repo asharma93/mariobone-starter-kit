@@ -1,0 +1,10 @@
+<ul class="main-layout-panel">
+  <li id="nav-panel" class="nav-panel area">
+    <div class="logo">
+      <h4>Top panel </h4>
+    </div>
+  </li>
+  <li id="workspace-panel" class="workspace-panel area">
+    <h4> Workspace Panel </h4>
+  </li>
+</ul>

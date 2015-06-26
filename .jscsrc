@@ -1,0 +1,25 @@
+{
+    "requireCurlyBraces": ["if", "else", "for", "while", "do", "try", "catch"],
+    "requireSpaceAfterKeywords": ["if", "else", "for", "while", "do", "switch", "return", "try", "catch"],
+    "requireParenthesesAroundIIFE": true,
+    "requireSpacesInFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "disallowSpacesInsideParentheses": true,
+    "disallowEmptyBlocks": true,
+    "requireCommaBeforeLineBreak": true,
+    "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
+    "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
+    "requireSpaceBeforeBinaryOperators": ["?", "+", "-", "/", "*", "=", "==" ,"===","!=", "!==", ">", ">=" ,"<", "<="],
+    "requireSpaceAfterBinaryOperators": ["?", ",", "+", "/", "*", ":", "=", "==", "===", "!=", "!==", ">", ">=" ,"<", "<="],
+    "disallowMultipleLineBreaks": true,
+    "validateLineBreaks": "LF",
+    "disallowKeywordsOnNewLine": ["else"],
+    "disallowMultipleLineBreaks": true,
+    "disallowMixedSpacesAndTabs": true,
+    "safeContextKeyword": ["self"],
+    "requireCapitalizedConstructors": true
+}

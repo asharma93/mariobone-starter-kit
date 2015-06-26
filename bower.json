@@ -1,0 +1,21 @@
+{
+  "name": "mariobone",
+  "version": "1.0.0",
+  "dependencies": {
+    "backbone": "1.1.2",
+    "bootstrap": "3.2.0",
+    "i18next": "1.7.3",
+    "jquery": "2.1.1",
+    "lodash": "2.4.1",
+    "marionette": "2.1.0",
+    "Marionette.SubRouter": "0.0.4",
+    "moment": "2.7.0",
+    "requirejs": "2.1.14",
+    "require-handlebars-plugin": "0.8.1",
+    "highstock-release": "2.0.3",
+    "sinon" : "1.10.3"
+  },
+  "resolutions": {
+    "jquery": "2.1.1"
+  }
+}
