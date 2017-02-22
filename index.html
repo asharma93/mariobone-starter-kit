@@ -31,7 +31,6 @@
                     });
                 });
 
-                // Copied from platform-js
                 $("#app-container")
                     .on("click.appRoute", "a[href]:not([data-noprefix])", function(event) {
                         var fragment = Backbone.history.getFragment($(this).attr("href")).replace("#", "");
